@@ -50,22 +50,13 @@ bool oled_task_kb(void) {
                 oled_write_P(PSTR("QWERTY\n"), false);
                 break;
             case 1:
-                oled_write_P(PSTR("Dvorak\n"), false);
+                oled_write_P(PSTR("Navigation\n"), false);
                 break;
             case 2:
-                oled_write_P(PSTR("Colemak-DH\n"), false);
+                oled_write_P(PSTR("Symbols\n"), false);
                 break;
             case 3:
-                oled_write_P(PSTR("Nav\n"), false);
-                break;
-            case 4:
-                oled_write_P(PSTR("Sym\n"), false);
-                break;
-            case 5:
-                oled_write_P(PSTR("Function\n"), false);
-                break;
-            case 6:
-                oled_write_P(PSTR("Adjust\n"), false);
+                oled_write_P(PSTR("F-keys\n"), false);
                 break;
             default:
                 oled_write_P(PSTR("Undefined\n"), false);
